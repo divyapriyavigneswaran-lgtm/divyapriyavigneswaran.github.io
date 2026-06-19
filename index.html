@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Divya Priya Vigneswaran | Product Owner · QA Lead</title>
+<meta name="description" content="Senior QA Lead transitioning into Product Ownership. 7+ years in Aviation SaaS, EdTech, and EV tech. Salesforce Agentforce Specialist. Based in Coimbatore, India."/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#0A1628;--navy-mid:#1E3A5F;--gold:#C9A84C;--gold-light:#E8C97A;--offwhite:#F0EDE8;--teal:#4A9B8E;--teal-light:#7FC5BA;--dim:rgba(240,237,232,0.55);--mid:rgba(240,237,232,0.82)}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--offwhite);line-height:1.6;overflow-x:hidden}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1rem 2.5rem;background:rgba(10,22,40,0.93);backdrop-filter:blur(8px);border-bottom:1px solid rgba(201,168,76,0.15)}
+.nav-logo{font-family:'Playfair Display',serif;font-size:1rem;font-weight:600;color:var(--gold)}
+.nav-links{display:flex;gap:1.75rem;list-style:none}
+.nav-links a{color:var(--dim);text-decoration:none;font-size:0.75rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.avail-pill{display:inline-flex;align-items:center;gap:6px;font-size:0.65rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:.28rem .75rem;border-radius:2px;background:rgba(74,155,142,0.12);color:var(--teal-light);border:1px solid rgba(74,155,142,0.35)}
+.avail-dot{width:6px;height:6px;border-radius:50%;background:var(--teal);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:6rem 2.5rem 4rem;position:relative;overflow:hidden}
+.hero-arc{position:absolute;right:-60px;top:50%;transform:translateY(-52%);width:480px;height:480px;opacity:.07;pointer-events:none}
+.eyebrow{font-size:.68rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.6rem,5.5vw,4.4rem);font-weight:700;line-height:1.08;margin-bottom:1.25rem}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.summary-block{background:rgba(30,58,95,0.4);border-left:3px solid var(--gold);padding:1.5rem 1.75rem;max-width:680px;margin-bottom:1.75rem;border-radius:0 3px 3px 0}
+.summary-block p{font-size:.9rem;color:var(--mid);line-height:1.9;margin-bottom:.9rem}
+.summary-block p:last-child{margin-bottom:0}
+.summary-block strong{color:var(--offwhite);font-weight:600}
+.summary-block em{color:var(--gold-light);font-style:normal;font-weight:500}
+.hero-contact{font-size:.76rem;color:var(--dim);margin-bottom:1.1rem;display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.hero-contact a{color:var(--teal-light);text-decoration:none}
+.hero-contact a:hover{color:var(--gold)}
+.sep{opacity:.35}
+.tags{display:flex;flex-wrap:wrap;gap:.45rem;margin-bottom:.9rem}
+.tag{font-size:.68rem;font-weight:500;letter-spacing:.06em;padding:.3rem .75rem;border-radius:2px;border:1px solid rgba(201,168,76,.35);color:var(--gold-light);background:rgba(201,168,76,.07)}
+.tag.tl{border-color:rgba(74,155,142,.4);color:var(--teal-light);background:rgba(74,155,142,.08)}
+.avail-row{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin-bottom:2rem;font-size:.76rem;color:var(--dim)}
+.ctas{display:flex;gap:.9rem;flex-wrap:wrap}
+.btn-p{padding:.7rem 1.6rem;background:var(--gold);color:var(--navy);font-size:.76rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;border:none;cursor:pointer;border-radius:2px;transition:background .2s,transform .15s;text-decoration:none;display:inline-block}
+.btn-p:hover{background:var(--gold-light);transform:translateY(-1px)}
+.btn-o{padding:.7rem 1.6rem;background:transparent;color:var(--offwhite);font-size:.76rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;border:1px solid rgba(240,237,232,.3);cursor:pointer;border-radius:2px;transition:border-color .2s,color .2s;text-decoration:none;display:inline-block}
+.btn-o:hover{border-color:var(--gold);color:var(--gold)}
+.stats-row{display:flex;gap:2.5rem;margin-top:3.5rem;padding-top:3rem;border-top:1px solid rgba(240,237,232,.1);flex-wrap:wrap}
+.stat-n{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:700;color:var(--gold)}
+.stat-l{font-size:.68rem;color:var(--dim);letter-spacing:.05em;margin-top:.1rem}
+
+/* SHARED SECTION */
+section{padding:5.5rem 2.5rem}
+.sec-eye{font-size:.65rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem}
+.sec-h{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3.5vw,2.6rem);font-weight:700;color:var(--offwhite);margin-bottom:.9rem;line-height:1.2}
+.sec-div{width:36px;height:2px;background:var(--gold);margin-bottom:2.5rem}
+
+/* ACCOMPLISHMENTS */
+.accom-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.accom-card{background:rgba(201,168,76,0.06);border:1px solid rgba(201,168,76,0.22);border-radius:3px;padding:1.35rem 1.5rem;position:relative;overflow:hidden}
+.accom-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),transparent)}
+.accom-num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--gold);line-height:1}
+.accom-label{font-size:.75rem;color:var(--mid);margin-top:.3rem;line-height:1.5}
+.accom-context{font-size:.68rem;color:var(--dim);margin-top:.25rem}
+
+/* EXPERIENCE */
+.exp-entry{margin-bottom:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(240,237,232,.07)}
+.exp-entry:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.exp-header{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;margin-bottom:.75rem;flex-wrap:wrap}
+.exp-title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:600}
+.exp-meta{font-size:.72rem;color:var(--dim);text-align:right;line-height:1.5}
+.exp-company{font-size:.82rem;color:var(--teal-light);font-weight:500;margin-bottom:.6rem}
+.exp-bullets{list-style:none;padding:0}
+.exp-bullets li{font-size:.83rem;color:var(--mid);padding:.3rem 0 .3rem 1.1rem;position:relative;line-height:1.7}
+.exp-bullets li::before{content:'';position:absolute;left:0;top:.78rem;width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0}
+.exp-highlight{color:var(--offwhite);font-weight:600}
+
+/* PM MODULES */
+.pm-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.pm-cap{grid-column:1/-1}
+.pm-card{background:rgba(30,58,95,.35);border:1px solid rgba(201,168,76,.1);border-radius:3px;padding:1.25rem}
+.pm-card.capstone{background:rgba(201,168,76,.07);border-color:rgba(201,168,76,.35)}
+.pm-card-num{font-size:.62rem;font-weight:700;letter-spacing:.15em;color:var(--gold);margin-bottom:.35rem;text-transform:uppercase}
+.pm-card h4{font-family:'Playfair Display',serif;font-size:.98rem;font-weight:600;margin-bottom:.5rem;line-height:1.35}
+.pm-card p{font-size:.76rem;color:var(--mid);line-height:1.65}
+.pm-card-chips{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.75rem}
+.chip{font-size:.65rem;padding:.2rem .55rem;background:rgba(74,155,142,.1);color:var(--teal-light);border:1px solid rgba(74,155,142,.22);border-radius:2px}
+.chip.gold{background:rgba(201,168,76,.1);color:var(--gold-light);border-color:rgba(201,168,76,.25)}
+
+/* SKILLS */
+.skills-po-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:.75rem;margin-top:1rem;margin-bottom:2.5rem}
+.po-skill{background:rgba(201,168,76,.07);border:1px solid rgba(201,168,76,.2);border-radius:3px;padding:.85rem 1rem;display:flex;align-items:center;gap:.6rem}
+.po-skill-dot{width:7px;height:7px;border-radius:50%;background:var(--gold);flex-shrink:0}
+.po-skill-text{font-size:.8rem;color:var(--offwhite);font-weight:500}
+.skills-secondary{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2rem}
+.skill-group-label{font-size:.62rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--teal-light);margin-bottom:.9rem;padding-bottom:.45rem;border-bottom:1px solid rgba(74,155,142,.2)}
+.skill-item{font-size:.8rem;color:var(--mid);padding:.35rem 0;border-bottom:1px solid rgba(240,237,232,.05);display:flex;align-items:center;gap:.5rem}
+.dot{width:5px;height:5px;border-radius:50%;background:var(--teal);flex-shrink:0}
+
+/* CERTS */
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.9rem;margin-top:3rem}
+.cert-card{background:rgba(30,58,95,.35);border:1px solid rgba(201,168,76,.12);border-radius:3px;padding:1.1rem 1.35rem;position:relative}
+.cert-card.active{border-color:rgba(74,155,142,.35)}
+.cert-badge{position:absolute;top:.75rem;right:.75rem;font-size:.58rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.15rem .45rem;border-radius:2px;background:rgba(74,155,142,.15);color:var(--teal-light);border:1px solid rgba(74,155,142,.3)}
+.cert-yr{font-size:.65rem;color:var(--dim);margin-bottom:.2rem}
+.cert-name{font-size:.85rem;font-weight:500}
+.cert-body{font-size:.72rem;color:var(--teal-light);margin-top:.2rem}
+
+/* WORK MODES */
+.modes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.mode-card{background:rgba(30,58,95,.35);border:1px solid rgba(201,168,76,.2);border-radius:3px;padding:1.5rem;text-align:center}
+.mode-icon{font-size:1.4rem;margin-bottom:.5rem}
+.mode-title{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:600}
+
+/* CONTACT */
+.contact-sec{text-align:center;background:rgba(30,58,95,.18)}
+.contact-sec .sec-div{margin:0 auto 1.25rem}
+.ct-tagline{font-family:'Playfair Display',serif;font-style:italic;font-size:1.1rem;color:var(--mid);max-width:540px;margin:0 auto .75rem;line-height:1.75}
+.ct-avail{font-size:.75rem;color:var(--dim);margin-bottom:2rem;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:.45rem}
+.ct-links{display:flex;justify-content:center;gap:1.25rem;flex-wrap:wrap}
+.ct-link{padding:.6rem 1.35rem;border:1px solid rgba(240,237,232,.2);color:var(--offwhite);text-decoration:none;border-radius:2px;font-size:.75rem;font-weight:500;letter-spacing:.06em;transition:border-color .2s,color .2s;display:inline-flex;align-items:center;gap:.45rem}
+.ct-link:hover{border-color:var(--gold);color:var(--gold)}
+.ct-link svg{width:15px;height:15px;flex-shrink:0}
+footer{text-align:center;padding:1.75rem;font-size:.68rem;color:var(--dim);border-top:1px solid rgba(240,237,232,.07)}
+
+@media(max-width:680px){
+  nav{padding:1rem}.nav-links{gap:.75rem}
+  .hero,section{padding:3.5rem 1.25rem}
+  .pm-grid,.modes-grid,.skills-secondary{grid-template-columns:1fr}
+  .pm-cap{grid-column:auto}
+  .stats-row{gap:1.5rem}
+  .exp-meta{text-align:left}
+  .hero-arc{display:none}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Divya Priya Vigneswaran</div>
+  <ul class="nav-links">
+    <li><a href="#hero">About</a></li>
+    <li><a href="#accomplishments">Wins</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#pm">PM Work</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <svg class="hero-arc" viewBox="0 0 480 480" fill="none" aria-hidden="true">
+    <circle cx="240" cy="240" r="210" stroke="#C9A84C" stroke-width="1.5" stroke-dasharray="8 6"/>
+    <circle cx="240" cy="240" r="155" stroke="#C9A84C" stroke-width="1" stroke-dasharray="4 8"/>
+    <circle cx="240" cy="240" r="100" stroke="#C9A84C" stroke-width=".75"/>
+    <line x1="240" y1="30" x2="240" y2="450" stroke="#C9A84C" stroke-width=".5" stroke-dasharray="3 9"/>
+    <line x1="30" y1="240" x2="450" y2="240" stroke="#C9A84C" stroke-width=".5" stroke-dasharray="3 9"/>
+    <path d="M 120 120 L 240 240 L 370 185" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="370" cy="185" r="5" fill="#C9A84C"/>
+  </svg>
+
+  <div class="eyebrow">Product Owner · Quality Engineering · Aviation SaaS</div>
+  <h1>Where precision<br>meets <em>product thinking</em></h1>
+
+  <div class="summary-block">
+    <p>I am a <strong>Senior Quality Engineering professional with 7+ years of experience</strong> across EdTech, Electric Vehicles, and Aviation Leasing — and I am now making a <em>deliberate, structured transition into Product Ownership</em>. At LeaseWorks (a Portside / Vista Equity Partners company), I led quality engineering on <strong>Aeris</strong>, a Salesforce-based aviation leasing SaaS platform, where my work extended well beyond testing: I owned backlog health, co-authored acceptance criteria, led UAT sign-off across finance, contracts, and asset management stakeholders, and directly influenced release sequencing through defect impact data.</p>
+    <p>With a <strong>Master's degree in Software Systems from PSG College of Arts and Science</strong>, I have built deep expertise in Salesforce testing, AI-augmented QA workflows — including a bespoke framework for Salesforce Agentforce using Cursor AI and MCP protocol — and Agile/Scrum delivery. I have consistently operated at the intersection of business requirements and engineering reality: the same intersection where great Product Owners live.</p>
+    <p>My transition into Product is grounded in practice, not just intent. I completed the <strong>AirTribe PM Launchpad</strong> programme (Capstone: TrulyMadly TM Café, May 2026), developed end-to-end PRDs, RICE-scored backlogs, OKR frameworks, and GTM strategies across six product exercises spanning consumer tech, HRTech, and SaaS. I am currently pursuing my <strong>Certified Scrum Product Owner (CSPO)</strong> certification.</p>
+    <p>What I bring to a Product Owner role is something most candidates cannot offer: <em>I have been the person who catches what gets missed when requirements are unclear, scope is unchecked, and acceptance criteria are vague.</em> I know exactly how product decisions ripple into engineering effort and release quality — and I am ready to make those decisions from the other side of the table.</p>
+  </div>
+
+  <div class="hero-contact">
+    <span>Coimbatore, Tamil Nadu</span><span class="sep">·</span>
+    <span>+91 82208 46516</span><span class="sep">·</span>
+    <a href="mailto:divyapriyavigneswaran@gmail.com">divyapriyavigneswaran@gmail.com</a><span class="sep">·</span>
+    <a href="https://linkedin.com/in/divyapriyavigneswaran">linkedin.com/in/divyapriyavigneswaran</a>
+  </div>
+
+  <div class="tags">
+    <span class="tag">Salesforce Agentforce Specialist</span>
+    <span class="tag">ISTQB CTFL</span>
+    <span class="tag">CSPO · In Progress</span>
+    <span class="tag">AirTribe PM Launchpad · May 2026</span>
+    <span class="tag">Aviation Leasing SaaS · Aeris</span>
+    <span class="tag tl">MSc Software Systems · PSG 2017</span>
+  </div>
+
+  <div class="avail-row">
+    <span class="avail-pill"><span class="avail-dot"></span>Actively looking · Full-time only</span>
+    <span class="sep">·</span><span>Remote</span>
+    <span class="sep">·</span><span>Hybrid</span>
+    <span class="sep">·</span><span>In-person</span>
+    <span class="sep">·</span><span>Available immediately</span>
+  </div>
+
+  <div class="ctas">
+    <a href="#accomplishments" class="btn-p">View Accomplishments</a>
+    <a href="#pm" class="btn-o">PM Work</a>
+    <a href="mailto:divyapriyavigneswaran@gmail.com" class="btn-o">Get in Touch</a>
+  </div>
+
+  <div class="stats-row">
+    <div><div class="stat-n">7+</div><div class="stat-l">Years in QA &amp; SaaS</div></div>
+    <div><div class="stat-n">42%</div><div class="stat-l">Post-release defect reduction</div></div>
+    <div><div class="stat-n">97%</div><div class="stat-l">Test coverage achieved</div></div>
+    <div><div class="stat-n">6</div><div class="stat-l">Major releases · zero rollbacks</div></div>
+  </div>
+</section>
+
+<!-- ACCOMPLISHMENTS -->
+<section id="accomplishments" style="background:rgba(30,58,95,.12)">
+  <div class="sec-eye">Accomplishments</div>
+  <h2 class="sec-h">Impact by the numbers</h2>
+  <div class="sec-div"></div>
+  <div class="accom-grid">
+    <div class="accom-card">
+      <div class="accom-num">42%</div>
+      <div class="accom-label">Reduction in post-release production defects</div>
+      <div class="accom-context">LeaseWorks · Structured regression tied to acceptance criteria</div>
+    </div>
+    <div class="accom-card">
+      <div class="accom-num">30%</div>
+      <div class="accom-label">Cut in mid-sprint rework</div>
+      <div class="accom-context">LeaseWorks · Enforcing DoD standards across 8 quarterly releases</div>
+    </div>
+    <div class="accom-card">
+      <div class="accom-num">97%</div>
+      <div class="accom-label">Test coverage across sprint deliverables</div>
+      <div class="accom-context">LeaseWorks · 500+ test cases mapped to sprint goals</div>
+    </div>
+    <div class="accom-card">
+      <div class="accom-num">6</div>
+      <div class="accom-label">Major releases with zero critical rollbacks</div>
+      <div class="accom-context">LeaseWorks · UAT sign-off across contracts, asset mgmt &amp; finance</div>
+    </div>
+    <div class="accom-card">
+      <div class="accom-num">30+</div>
+      <div class="accom-label">Pre-dev ambiguities flagged, preventing scope creep</div>
+      <div class="accom-context">LeaseWorks · 150+ Salesforce config validations</div>
+    </div>
+    <div class="accom-card">
+      <div class="accom-num">35%</div>
+      <div class="accom-label">Reduction in critical bug escape rate</div>
+      <div class="accom-context">MoEVing · Pre-release sanity checklist adopted as DoD gate</div>
+    </div>
+    <div class="accom-card">
+      <div class="accom-num">40%</div>
+      <div class="accom-label">Fewer post-launch defects</div>
+      <div class="accom-context">Hyrrokkin · 8 client accounts, 20+ EdTech products</div>
+    </div>
+    <div class="accom-card">
+      <div class="accom-num">400+</div>
+      <div class="accom-label">Issue defect RTM driving backlog prioritisation</div>
+      <div class="accom-context">LeaseWorks · Used across 3 consecutive release cycles</div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="sec-eye">Professional Experience</div>
+  <h2 class="sec-h">8 years across three industries</h2>
+  <div class="sec-div"></div>
+
+  <div class="exp-entry">
+    <div class="exp-header">
+      <div>
+        <div class="exp-title">Engineer, Quality Engineering</div>
+        <div class="exp-company">LeaseWorks — Portside / Vista Equity Partners &nbsp;|&nbsp; Remote</div>
+      </div>
+      <div class="exp-meta">Jul 2023 – Jun 2026</div>
+    </div>
+    <ul class="exp-bullets">
+      <li>Owned product backlog hygiene across <span class="exp-highlight">8 quarterly releases</span> — reviewed 100+ user stories per sprint with PMs, enforcing acceptance criteria and DoD standards that <span class="exp-highlight">cut mid-sprint rework by 30%</span>.</li>
+      <li>Designed and executed <span class="exp-highlight">500+ manual test cases</span> mapped to sprint goal deliverables, achieving <span class="exp-highlight">97% test coverage</span> and providing real-time go/no-go signals for release decisions.</li>
+      <li>Reduced post-release production defects by <span class="exp-highlight">42%</span> through structured regression cycles tied to user story acceptance criteria — directly improving GTM quality and release confidence.</li>
+      <li>Validated 150+ Salesforce configuration changes against product requirements; flagged <span class="exp-highlight">30+ ambiguities pre-development</span>, preventing scope creep across aviation leasing business workflows.</li>
+      <li>Led UAT coordination with 3 stakeholder groups (contracts, asset management, finance) as product-side sign-off owner; achieved <span class="exp-highlight">clean approvals on 6 major releases</span> with zero critical rollbacks.</li>
+      <li>Maintained a <span class="exp-highlight">400+ issue defect RTM</span> in JIRA used for backlog grooming and impact-based prioritisation across 3 consecutive release cycles.</li>
+    </ul>
+  </div>
+
+  <div class="exp-entry">
+    <div class="exp-header">
+      <div>
+        <div class="exp-title">Quality Engineer — Manual QA</div>
+        <div class="exp-company">MoEVing Urban Technologies &nbsp;|&nbsp; Remote</div>
+      </div>
+      <div class="exp-meta">May 2022 – Feb 2023</div>
+    </div>
+    <ul class="exp-bullets">
+      <li>Executed 300+ test cases across web and mobile for an EV fleet management platform; collaborated with PMs on sprint goal alignment for <span class="exp-highlight">60+ user stories across 10 sprints</span>.</li>
+      <li>Cut critical-bug escape rate by <span class="exp-highlight">35%</span> by introducing a pre-release sanity checklist — adopted as a definition of done gate across QA and product teams.</li>
+      <li>Documented 18 integration defects via Postman API testing with severity and business impact context; contributed directly to backlog refinement sessions.</li>
+      <li>Contributed acceptance criteria to <span class="exp-highlight">60+ user stories</span> during sprint planning; represented QA in sprint review demos to product leadership.</li>
+    </ul>
+  </div>
+
+  <div class="exp-entry">
+    <div class="exp-header">
+      <div>
+        <div class="exp-title">Software Tester</div>
+        <div class="exp-company">Hyrrokkin Branding Services &nbsp;|&nbsp; Coimbatore</div>
+      </div>
+      <div class="exp-meta">Jul 2018 – Oct 2021</div>
+    </div>
+    <ul class="exp-bullets">
+      <li>Delivered manual testing for <span class="exp-highlight">20+ EdTech products</span> while managing QA pipeline for 5 concurrent client projects.</li>
+      <li>Served as primary product liaison for 8 client accounts — translated stakeholder feedback into test scenarios and <span class="exp-highlight">cut post-launch defects by 40%</span>.</li>
+      <li>Operated as de facto product owner for 3 accounts — coordinating dev, design, and client teams end-to-end.</li>
+      <li>Tested Salesforce CRM for 3 clients; supported 5 product demos presenting features and roadmap updates to non-technical stakeholders.</li>
+    </ul>
+  </div>
+
+  <div class="exp-entry">
+    <div class="exp-header">
+      <div>
+        <div class="exp-title">Network Specialist</div>
+        <div class="exp-company">Aegis Corporation Limited &nbsp;|&nbsp; Bengaluru</div>
+      </div>
+      <div class="exp-meta">Dec 2017 – May 2018</div>
+    </div>
+    <ul class="exp-bullets">
+      <li>Maintained <span class="exp-highlight">99%+ network uptime</span> for 500+ agents; reduced MTTR by 20% through structured incident escalation and cross-team coordination.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PM WORK -->
+<section id="pm" style="background:rgba(30,58,95,.12)">
+  <div class="sec-eye">Product Management Transition</div>
+  <h2 class="sec-h">5 PM exercises,<br>one capstone</h2>
+  <div class="sec-div"></div>
+  <div class="pm-grid">
+
+    <div class="pm-card capstone pm-cap">
+      <div class="pm-card-num">★ Capstone · AirTribe PM Launchpad</div>
+      <h4>TrulyMadly — TM Café</h4>
+      <p>Full product lifecycle: market sizing, 4 user personas, competitor analysis (Astrotalk, Amaha, YourDost), trigger-to-payment funnel design, willingness-to-pay research, OKR/KPI dashboard, and GTM strategy for a paid in-app social discovery feature. Revenue model projecting ₹252 Cr ARR.</p>
+      <div class="pm-card-chips">
+        <span class="chip gold">₹252 Cr projected ARR</span>
+        <span class="chip gold">18-page PRD</span>
+        <span class="chip">RICE scoring</span>
+        <span class="chip">Nudge engine</span>
+        <span class="chip">4 personas</span>
+        <span class="chip">GTM strategy</span>
+      </div>
+    </div>
+
+    <div class="pm-card">
+      <div class="pm-card-num">Module 4</div>
+      <h4>YouTube Premium — Growth Strategy</h4>
+      <p>Identified acquisition, activation, and monetisation levers. Built north star metric framework and RICE-prioritised feature backlog for the Premium subscription tier.</p>
+      <div class="pm-card-chips"><span class="chip">North star metric</span><span class="chip">Subscription growth</span><span class="chip">RICE backlog</span></div>
+    </div>
+
+    <div class="pm-card">
+      <div class="pm-card-num">Module 5</div>
+      <h4>Zomato — Retention Strategy</h4>
+      <p>Built a retention OKR framework using behavioural data, habit loops, and personalisation signals. Sprint-level initiatives mapped to WAU and order frequency KPIs.</p>
+      <div class="pm-card-chips"><span class="chip">Retention OKRs</span><span class="chip">Habit loops</span><span class="chip">KPI trees</span></div>
+    </div>
+
+    <div class="pm-card">
+      <div class="pm-card-num">Module 3</div>
+      <h4>Zepto — End-to-End Product Discovery</h4>
+      <p>Problem framing, user research synthesis, and opportunity sizing. OKRs for a grocery delivery growth hypothesis with definition of done for discovery milestones.</p>
+      <div class="pm-card-chips"><span class="chip">Problem framing</span><span class="chip">Opportunity sizing</span><span class="chip">OKRs</span></div>
+    </div>
+
+    <div class="pm-card">
+      <div class="pm-card-num">Module 1</div>
+      <h4>Ola Share — Product Discovery &amp; Strategy</h4>
+      <p>Defined north star metric, built user personas for commuters and price-sensitive riders, scoped features via RICE scoring, and mapped GTM rollout for ride-sharing adoption.</p>
+      <div class="pm-card-chips"><span class="chip">User personas</span><span class="chip">GTM rollout</span><span class="chip">RICE</span></div>
+    </div>
+
+    <div class="pm-card">
+      <div class="pm-card-num">Module 2</div>
+      <h4>Microsoft Zune vs iPod — Failure Analysis</h4>
+      <p>Competitor analysis across positioning, feature differentiation, and pricing. Identified backlog prioritisation errors that contributed to Zune's market exit.</p>
+      <div class="pm-card-chips"><span class="chip">Competitor analysis</span><span class="chip">Backlog errors</span><span class="chip">Positioning</span></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="sec-eye">Skills</div>
+  <h2 class="sec-h">What I bring to the table</h2>
+  <div class="sec-div"></div>
+
+  <div class="sec-eye" style="margin-bottom:.6rem;color:var(--gold-light)">Product Owner Skills</div>
+  <div class="skills-po-grid">
+    <div class="po-skill"><span class="po-skill-dot"></span><span class="po-skill-text">Product Backlog Management</span></div>
+    <div class="po-skill"><span class="po-skill-dot"></span><span class="po-skill-text">Sprint Goal Definition</span></div>
+    <div class="po-skill"><span class="po-skill-dot"></span><span class="po-skill-text">Acceptance Criteria &amp; DoD</span></div>
+    <div class="po-skill"><span class="po-skill-dot"></span><span class="po-skill-text">RICE / MoSCoW Scoring</span></div>
+    <div class="po-skill"><span class="po-skill-dot"></span><span class="po-skill-text">User Story Writing (Gherkin)</span></div>
+    <div class="po-skill"><span class="po-skill-dot"></span><span class="po-skill-text">OKR &amp; KPI Frameworks</span></div>
+    <div class="po-skill"><span class="po-skill-dot"></span><span class="po-skill-text">Roadmap Prioritisation</span></div>
+    <div class="po-skill"><span class="po-skill-dot"></span><span class="po-skill-text">GTM Readiness</span></div>
+    <div class="po-skill"><span class="po-skill-dot"></span><span class="po-skill-text">Release Planning</span></div>
+    <div class="po-skill"><span class="po-skill-dot"></span><span class="po-skill-text">Stakeholder Management</span></div>
+    <div class="po-skill"><span class="po-skill-dot"></span><span class="po-skill-text">North Star Metric Framework</span></div>
+    <div class="po-skill"><span class="po-skill-dot"></span><span class="po-skill-text">Persona &amp; Journey Mapping</span></div>
+  </div>
+
+  <div class="skills-secondary">
+    <div>
+      <div class="skill-group-label">QA / Testing</div>
+      <div class="skill-item"><span class="dot"></span>Manual &amp; Regression Testing</div>
+      <div class="skill-item"><span class="dot"></span>UAT Coordination</div>
+      <div class="skill-item"><span class="dot"></span>Salesforce CRM Testing · Provar</div>
+      <div class="skill-item"><span class="dot"></span>API Testing (Postman)</div>
+      <div class="skill-item"><span class="dot"></span>RTM &amp; Defect Lifecycle</div>
+      <div class="skill-item"><span class="dot"></span>JIRA · TestRail</div>
+    </div>
+    <div>
+      <div class="skill-group-label">Salesforce &amp; Domain</div>
+      <div class="skill-item"><span class="dot"></span>Sales Cloud · Service Cloud</div>
+      <div class="skill-item"><span class="dot"></span>Workflows · Approval Processes</div>
+      <div class="skill-item"><span class="dot"></span>Custom Objects · Dashboards</div>
+      <div class="skill-item"><span class="dot"></span>Agentforce (Specialist)</div>
+      <div class="skill-item"><span class="dot"></span>Aviation Leasing SaaS (Aeris)</div>
+      <div class="skill-item"><span class="dot"></span>Figma (basic) · Lovable · Asana</div>
+    </div>
+  </div>
+
+  <!-- CERTS: latest to earliest -->
+  <div class="cert-grid">
+    <div class="cert-card active">
+      <span class="cert-badge">In Progress</span>
+      <div class="cert-yr">2026</div>
+      <div class="cert-name">Certified Scrum Product Owner (CSPO)</div>
+      <div class="cert-body">Scrum Alliance</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-yr">May 2026</div>
+      <div class="cert-name">Product Management Certification</div>
+      <div class="cert-body">AirTribe</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-yr">2025</div>
+      <div class="cert-name">Salesforce Agentforce Specialist</div>
+      <div class="cert-body">Salesforce / Trailhead</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-yr">2025</div>
+      <div class="cert-name">Agile Fundamentals: Scrum &amp; Kanban</div>
+      <div class="cert-body">Udemy</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-yr">2024</div>
+      <div class="cert-name">ISTQB Foundation Level — CTFL</div>
+      <div class="cert-body">ISTQB</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-yr">2017</div>
+      <div class="cert-name">MSc Software Systems (Integrated PG)</div>
+      <div class="cert-body">PSG College of Arts &amp; Science</div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK MODES -->
+<section style="background:rgba(30,58,95,.12)">
+  <div class="sec-eye">Work Preferences</div>
+  <h2 class="sec-h">Flexible on location</h2>
+  <div class="sec-div"></div>
+  <div class="modes-grid">
+    <div class="mode-card"><div class="mode-icon">&#127968;</div><div class="mode-title">Remote</div></div>
+    <div class="mode-card"><div class="mode-icon">&#128203;</div><div class="mode-title">Hybrid</div></div>
+    <div class="mode-card"><div class="mode-icon">&#127970;</div><div class="mode-title">In-person</div></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-sec">
+  <div class="sec-eye">Let's Connect</div>
+  <h2 class="sec-h">Open to Product Owner<br>&amp; QA Lead opportunities</h2>
+  <div class="sec-div"></div>
+  <p class="ct-tagline">"7 years of knowing exactly what breaks products — now ready to define what gets built next."</p>
+  <div class="ct-avail">
+    <span class="avail-pill"><span class="avail-dot"></span>Available immediately · Full-time only</span>
+    <span class="sep">·</span><span>Remote · Hybrid · In-person</span>
+    <span class="sep">·</span><span>India-wide</span>
+  </div>
+  <div class="ct-links">
+    <a href="mailto:divyapriyavigneswaran@gmail.com" class="ct-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+      divyapriyavigneswaran@gmail.com
+    </a>
+    <a href="https://linkedin.com/in/divyapriyavigneswaran" class="ct-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+      LinkedIn Profile
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Divya Priya Vigneswaran · Coimbatore, Tamil Nadu · Full-time · Remote · Hybrid · In-person
+</footer>
+
+</body>
+</html>
